@@ -9,7 +9,10 @@
         <!------------------------------------------------------------->
     <body>
         <!--header/ navigation-->
-        <header id="home" class="header">
+        <header id="home" class="header flex-row">
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="bradley-kennett-76a164158" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/bradley-kennett-76a164158?trk=profile-badge">
+            <img src="./assets/images/linkedin icon.svg" alt="link to linkedin profile"></a></div>
+              
             <nav>
                 <ul>
                    <li><a href="#home">Home</a></li>
@@ -93,5 +96,49 @@
         </main>
         <!--end about me-->
         <!----------------------------------------------------------------------------->
+        <!--resume begin-->
+        <section id="resume" class="resume flex-row">
+            <article class="work-history">
+                <iframe src="https://codechef27.github.io/run-buddy/"></iframe>
+            </article>
+            <article class="work-history">
+                <iframe src="coming-soon"></iframe>
+            </article>
+            <article class="work-history">
+                <iframe src="coming-soon"></iframe>
+            </article>
+            <article class="work-history">
+                <iframe src="coming-soon"></iframe>
+            </article>
+        </section>
+        <!--resume end-->
+        <!------------------------------------------------------------------------------->  
+        <!--contact form-->
+        <section id="contact" class="contact-form">
+            <div class="flex-row">
+                <h3>Contact</h3>
+                <address>
+                    Have a question</br>
+                    or want to email me</br>
+                    E: <a href="mailto:bradleyjkennett@gmail.com">bradleyjkennett@gmail.com</a>
+                </address>
+                <form>
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" placeholder="Your Name" />
+
+                <label for="contact-email">Enter email</label>
+                <input type="text" id="contact-email" placeholder="email" />
+
+                <label for="contact-message">Your Message</label>
+                <textarea id="contact-message" placeholder="Message"></textarea>
+
+                <button type="submit">Submit</button>
+                </form>
+            </div>  
+        <footer>
+            
+            <h4>&copy; 2022 Bradley Kennett</h4>
+            
+        </footer>  
     </body>
 </html>
