@@ -4,12 +4,76 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --primary-color: #a6a6a6;
+    --secondary-color: #5b4a29;
+    --terttiary-color: #6291b7;
+}
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    line-height: 1.4;
+    background-image: url(./images/portfolio\ background.png);
 
 }
+/*-----------------------------------------------------------------------------------*/
+header {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 30px 40px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: rgba(0,0,0, .25);
+
+}
+
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 10px 0;
+    
+}
+
+header nav ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 15px 15px;
+    font-size: 22px;
+     
+    
+}
+
+header nav ul li a:hover {
+    font-weight: bolder;
+    color: var(--secondary-color);
+
+}
+/*------------------------------------------------------------------------*/
+    
+    
+
+
+
+
+
+   
+
+     
+
+
+
+
+
+
+   
+
+
 
      
  
