@@ -5,15 +5,13 @@
     box-sizing: border-box;
 }
 :root {
-    --primary-color: #a6a6a6;
-    --secondary-color: #5b4a29;
-    --terttiary-color: #6291b7;
+    --primary-color: #ffffff;
+    --secondary-color: #272424;
+    --terttiary-color: #10d4a3f1;
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: url(./images/portfolio\ background.png);
-
+    font-family:'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
 }
 /*-----------------------------------------------------------------------------------*/
 header {
@@ -25,10 +23,10 @@ header {
     position: -webkit-sticky;
     top: 0;
     z-index: 9999;
-    background-color: rgba(0,0,0, .25);
+    background-color: var(--secondary-color);
+    border-bottom: var(--terttiary-color) 2px solid;
 
 }
-
 
 header nav ul {
     display: flex;
@@ -37,45 +35,74 @@ header nav ul {
     align-items: center;
     list-style: none;
     margin: 10px 0;
-    
+    border-bottom: #ffffff;
 }
 
 header nav ul li a {
     color: var(--primary-color);
     text-decoration: none;
     padding: 15px 15px;
-    font-size: 22px;
-     
-    
+    font-size: 24px;
 }
 
 header nav ul li a:hover {
     font-weight: bolder;
-    color: var(--secondary-color);
+    color:var(--terttiary-color);
 
 }
 /*------------------------------------------------------------------------*/
-    
-    
 
+.hero {
+    background-image: url(./images/portfolio-background.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,.8);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    border: var(--terttiary-color) solid 2px;
+   
+}
 
+.hero div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.hero p {
+    display: flex;
+    color: var(--primary-color);
+    font-size: 32px;
+    font-weight:lighter;
+    flex-wrap: wrap;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding: 100px;
+}
 
+button {
+    border: 2px solid var(--terttiary-color);
+    font-size: 22px;
+    background-color:rgba(0,0,0,.0);
+    color: var(--primary-color);
+    padding: 8px 8px;
+}
+
+.button a:hover {
+    background-color:var(--secondary-color)!important;
+}
+/*--------------------------------------------------------------------*/
 
    
 
-     
 
-
-
-
-
-
-   
-
-
-
-     
- 
-   
     
+
+
+
