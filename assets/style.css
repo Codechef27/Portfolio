@@ -105,14 +105,12 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-wrap: wrap;
-    margin: 48px 48px;
-    
-    
+    margin: 38px 38px;   
 }
   
 .main-title {
     text-align: center;
+    align-content: center;
     font-size: 38px;
     width: 600px;
     margin: 48px 30px;
@@ -120,40 +118,34 @@ main {
     color: var(--secondary-color);
     border-bottom: 3px solid var(--secondary-color);
 }
-    
+
 .fact {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;   
 }
 
 .fact-info {
-    /* justify-content: center;
-    align-items: center;
-    align-content: center;*/
     flex: 1 49%;
-    border: 1px solid red;  
+    padding: 12px 0;
 }
 
 
 .fact-img {
     margin: auto;
-    height: 80px;
-    width: 80px;
+    height: 88px;
+    width: 88px;
     border: 4px solid var(--secondary-color);
     border-radius: 50%;
     background-color: var(--terttiary-color);
-    padding: 18px 18px; 
-    border: 1px solid purple;   
+    padding: 18px 18px;       
 }
 
-.fact-text h3{
-
-    width: 100%;
-    text-align: center;
+.fact-text h3 {
+    width: auto;
     font-size: 36px;
     color: var(--secondary-color);
-    border: 1px solid blue;
-   
+    text-align: center; 
+    margin: 12px 20px;
 }
 
 .fact-text p {
@@ -161,8 +153,39 @@ main {
     text-align: center;
     font-size: 22px;
     color: var(--secondary-color); 
-    border: 1px solid orange;
+    padding: 18px 0;
+
 }   
+/*-----------------------------------------------------------------*/
+
+
+.portfolio {
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 28px 15%;
+   
+}
+
+.portfolio h2 {
+    text-align: center;
+    font-size: 38px;
+    width: 600px;
+    margin: 0 30px;
+    padding: 28px 38px 18px;
+    color: var(--primary-color);
+    border-bottom: 3px solid;
+}
+
+.work-history {
+    padding: 12px 12px;
+    border: 2px solid var(--terttiary-color);
+    margin: 12px 18px;
+}
+/*---------------------------------------------------------------------*/
 
 
    
