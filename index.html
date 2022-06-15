@@ -1,32 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+</html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="UTF-8" />
         <title>Bradley K. Portfolio</title>
-        <link rel="stylesheet" href="./assets/style.css">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
     </head>
         <!------------------------------------------------------------->
     <body alt="hexagon shapes">
         <!--header/ navigation-->
-        <header>
-            <nav>    
-                <ul>
-                    <li>
-                       <a href="#home">Home</a>
-                    </li>
-                    <li>
-                       <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                       <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                       <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>     
+        <header class="container-fluid">
+            <section class="d-flex flex-row ">
+                <div class="">
+                    <a href="https://github.com/Codechef27">
+                        <img class="git" src="./assets/images/github.svg">
+                    </a>
+                </div>
+                <div class="">
+                    <a href="https://www.linkedin.com/in/bradley-kennett-76a164158/">
+                        <img class="linkedin" src="./assets/images/linkedin-icon.svg">
+                    </a>
+                </div> 
+                <div class="d-flex ms-auto">
+                        <nav class="navbar navbar-expand-lg">
+                            <button class="navbar-toggler collapsed d-flex d-lg-none d-flex flex-column 
+                                justify-content-around" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent"
+                                aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon top-bar"></span>
+                                <span class="toggler-icon middle-bar"></span>
+                                <span class="toggler-icon bottom-bar"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="#home">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#about-me">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#portfolio">Portfolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#contact">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+            </section>
+        
+        </header>
 
         <!--header/navigation end-->
         <!-------------------------------------------------------------->
@@ -110,8 +140,8 @@
             <h2 class="section-title"> Recent Projects</h2>
             <article>
                 <div>
-                    <iframe src="https://codechef27.github.io/run-buddy/"allowfullscreen=""></iframe>
-                    <button type="button" onclick="location.href='https://codechef27.github.io/run-buddy/'">Visit Run Buddy</button>
+                    <img class="iframe" src="./assets/images/game-reviews.png">
+                    <button type="button" onclick="location.href='https://codechef27.github.io/pc-game-reviews/'">Game Reviews</button>
                 </div>
                 <div>
                     <iframe src="coming-soon"></iframe>
@@ -168,6 +198,10 @@
             
             <h4>&copy; 2022 Bradley Kennett</h4>
             
-        </footer>  
+        </footer> 
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" 
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" 
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script> 
     </body>
 </html>

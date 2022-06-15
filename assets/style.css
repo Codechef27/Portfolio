@@ -17,40 +17,138 @@ body {
 
 
 header {
-    height: 80px;
+    /* height: 100px; */
     position: sticky;
     position: -webkit-sticky;
     top: 0;
     z-index: 9999;
     background-color: var(--secondary-color);
     border-bottom: var(--terttiary-color) 2px solid;
-    padding-top: 8px;
+    
    
 }
 
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
+header ul {
     list-style: none;
     margin: 10px 0; 
     padding: 10px 0;
+    background-color: var(--secondary-color);
 }
 
-header nav ul li a {
+header ul li a {
     color: var(--primary-color);
     text-decoration: none;
     padding: 15px 15px;
     font-size: 18px;
-    text-align: center;
+    
 }
 
-header nav ul li a:hover {
+header ul li a:hover {
     font-weight: bolder;
     color:var(--terttiary-color);
 
+} 
+
+.git {
+    height: 40px;
+    margin: 20px;
+  
+    
 }
+
+.linkedin {
+    height: 40px;
+    margin: 20px;
+}
+
+
+.navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+    border: 2px solid var(--secondary-color);
+   
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    position: relative;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: var(--terttiary-color);
+    border-radius: 1;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    top: 20px;
+    transform: rotate(0deg);
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    top: inherit;
+    transform: rotate(-135deg);
+}
+
+/* Color of 3 lines */
+
+
+
+
+
 /*------------------------------------------------------------------------*/
 
 .hero {
@@ -190,7 +288,12 @@ article div {
     display: grid;
     margin: 20px;
 }
-
+.iframe {
+    width: 300px;
+    height: 300px;
+    border: 3px solid silver;
+    padding: 8px;
+}
 iframe {
     padding: 8px;
     border: 3px solid silver;
@@ -244,10 +347,11 @@ article button:hover {
 }
 
 form {
-    padding: 26px 85px;
+    padding: 26px 20px;
     display: flex;
     flex-direction: column;
     background-color: var(--secondary-color);
+    border-radius: 15px;
 }
 
 input {
@@ -300,6 +404,7 @@ footer {
     align-items: center;
     height: 100px;
     background-color: var(--terttiary-color);
+    margin-top: 10px;
 }
 
 footer h4 {
@@ -314,14 +419,14 @@ footer h4 {
 
 }
 /*media query for tablets and smaller*/
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     main {
         padding: 0 146px;
     }
-}
+} */
 
 /*media query for mobile phones and smaller*/
-@media  screen and (max-width: 575px) {
+/* @media  screen and (max-width: 575px) {
 
     .hero {
         height: 450px;
@@ -339,7 +444,7 @@ footer h4 {
         padding: 34px 0 16px
     }
 
-}
+} */
 
    
 
