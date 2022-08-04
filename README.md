@@ -1,7 +1,7 @@
 # Portfolio
 
 ## Link to deployed page
-https://codechef27.github.io/Portfolio/
+-[my-profile](https://codechef27.github.io/Portfolio/)
 
 ## Purpose 
 A portfolio website that highlights my work history 
